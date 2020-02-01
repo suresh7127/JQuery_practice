@@ -28,14 +28,12 @@
     ];
 
     var drinkDiv = document.getElementById("drink-options");
-    for (var i = 0; i < drinkList.length; i++) {
+    drinkList.forEach(function (drink) {
       var newDiv = document.createElement("p");
-      newDiv.textContent = drinkList[i];
+      newDiv.textContent = drink;
       drinkDiv.appendChild(newDiv);
 
-    }
-
-
+    });
 
   // Using JavaScript programmatically append each drinkList item to the "drink-options" div
   // HINT: you will need a for loop to go over each element in the list
