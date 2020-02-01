@@ -32,10 +32,8 @@
     var drinkDiv = $("#drink-options");
 
     $.each(drinkList, function (i, drink) {
-      var newDrink = $("<h1>" + drinkList[i] + "</h1>");
-      // newDrink.text(drinkList[i]);
 
-      drinkDiv.append(newDrink);
+      drinkDiv.append("<p>" + drink + "<p>");
     });
 
   // Using JavaScript programmatically append each drinkList item to the "drink-options" div
